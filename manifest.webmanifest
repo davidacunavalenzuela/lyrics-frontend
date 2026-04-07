@@ -1,0 +1,12 @@
+{
+  "id": "/",
+  "name": "Cancionero",
+  "short_name": "Cancionero",
+  "description": "Listado y letras de canciones",
+  "lang": "es-CL",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f172a"
+}
