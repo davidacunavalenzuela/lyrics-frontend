@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin | Canciones</title>
+
+  <meta name="theme-color" content="#111827" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <h1 class="app-title">Administrador de canciones</h1>
+      <p class="app-subtitle">Ingresa nuevas canciones en tu base de datos</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card admin-card">
+      <div class="card-header">
+        <h2>Nueva canción</h2>
+        <p>Completa el formulario y guarda en Google Sheet.</p>
+      </div>
+
+      <form id="songForm" class="song-form">
+        <div class="form-group">
+          <label for="title">Título</label>
+          <input
+            type="text"
+            id="title"
+            name="title"
+            placeholder="Ej: Sublime Gracia"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="lyric">Letra</label>
+          <textarea
+            id="lyric"
+            name="lyric"
+            rows="16"
+            placeholder="Pega aquí la letra completa..."
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" id="saveBtn" class="btn btn-primary">
+            Guardar canción
+          </button>
+
+          <button type="button" id="clearBtn" class="btn btn-secondary">
+            Limpiar
+          </button>
+        </div>
+
+        <div id="formMessage" class="form-message" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>
